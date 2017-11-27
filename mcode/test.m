@@ -15,7 +15,8 @@ show_figure(signal,Fs,tm,ann,stages,stage_label)
 
 %% 
 clear all;
-database_path = 'database/sleep-edfx/';
+dataset_name = 'sleep-edfx';
+database_path = strcat('database/',dataset_name,'/');
 stage_label = {'1';'2';'3';'4';'R';'W';'time'};
 % l_filename = cellfun(@(x) strsplit(x,{' '}), ls(strcat(database_path,'*.edf')));
 l_filename = strsplit(ls(strcat(database_path,'*.edf')),{'\t','\n'}).';
@@ -25,9 +26,10 @@ is_first = 1;
 for k=1:length(l_filename)
     filename = l_filename{k,1};
     try
-        display([filename])
+        display([filename]);
         [signals,Fs,tm] = rdsamp(filename);
         [ann,anntype,subtype,chan,num,comments] = rdann(filename,'hyp');
+        info = wfdbdesc(strcat(dataset_name,filename));
         save(strcat(filename,'.mat'),'signals','Fs','tm','ann','anntype','subtype','chan','num','comments')
         signal = signals(:,1);
 
