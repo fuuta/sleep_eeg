@@ -1,0 +1,31 @@
+{
+  "label_sets": {
+    "difficult": {
+      "sets": {
+        "Sleep_stage_W" : 0,
+        "Sleep_stage_R" : 1,
+        "Sleep_stage_1" : 2,
+        "Sleep_stage_2" : 3,
+        "Sleep_stage_3" : 4,
+        "Sleep_stage_4" : 5,
+        "Sleep_stage_?" : 6,
+        "Movement_time" : 7
+      },
+      "num_label": 8
+    },
+    "easy": {
+      "sets": {
+        "Sleep_stage_W": 0,
+        "Sleep_stage_R": 1,
+        "Sleep_stage_1": 2,
+        "Sleep_stage_2": 2,
+        "Sleep_stage_3": 2,
+        "Sleep_stage_4": 2,
+        "Sleep_stage_?": 0,
+        "Movement_time": 0
+      },
+      "num_label": 3
+    }
+  }
+}
+

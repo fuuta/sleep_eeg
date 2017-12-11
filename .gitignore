@@ -2,7 +2,11 @@
 *.hyp
 *.edf
 *.tar
+*.pkl
+*.h5
+*.hdf5
 .idea/
 .ipynb_checkpoints/
-*.DS_Store
+.DS_Store
+another/
 
