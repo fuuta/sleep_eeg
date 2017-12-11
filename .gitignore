@@ -1,3 +1,8 @@
 *.mat
 *.hyp
 *.edf
+*.tar
+.idea/
+.ipynb_checkpoints/
+*.DS_Store
+

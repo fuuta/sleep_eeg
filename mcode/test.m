@@ -29,8 +29,9 @@ for k=1:length(l_filename)
         display([filename]);
         [signals,Fs,tm] = rdsamp(filename);
         [ann,anntype,subtype,chan,num,comments] = rdann(filename,'hyp');
-        info = wfdbdesc(strcat(dataset_name,filename));
-        save(strcat(filename,'.mat'),'signals','Fs','tm','ann','anntype','subtype','chan','num','comments')
+        tn = strsplit(filename,'/');
+        info = wfdbdesc(strcat(dataset_name,'/',tn{1,3}));
+        save(strcat(filename,'.mat'),'signals','Fs','tm','ann','anntype','subtype','chan','num','comments','info')
         signal = signals(:,1);
 
         stages = cellfun(@(x) flip(strsplit(x,{' ','_'})), comments,'UniformOutput',false);
