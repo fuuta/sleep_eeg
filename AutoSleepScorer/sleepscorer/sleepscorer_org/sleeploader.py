@@ -3,7 +3,7 @@ import os
 import re
 import mne
 import numpy as np
-from tools import butter_bandpass_filter
+from sleepscorer_org.tools import butter_bandpass_filter
 from multiprocessing import Pool
 from copy import deepcopy
 

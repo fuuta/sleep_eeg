@@ -1,21 +1,12 @@
-import numpy as np
-import pandas as pd
-import sleeploader
-import tools
-import time
-import glob
-import os,sys
-import traceback
+
+
 import json
-from scipy.io import loadmat
-import mne
-import pprint
-from collections import Counter
-import _pickle as cPickle
+import os
 import time
 
 import tensorflow as tf
 from keras.backend import tensorflow_backend
+
 config = tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True))
 session = tf.Session(config=config)
 tensorflow_backend.set_session(session)
@@ -26,8 +17,8 @@ from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Conv1D, MaxPooling1D
 from keras.layers.normalization import BatchNormalization
 from keras.models import Sequential
-from keras.utils import np_utils
 from json_encoder import JsonEncoder
+
 
 
 

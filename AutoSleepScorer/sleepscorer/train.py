@@ -1,13 +1,14 @@
+from omazinai_for_debug import omazinai
+omazinai()
 
 import numpy as np
 import pandas as pd
-import sleeploader
-import tools
 import glob
 import os
 import json
 import pprint
 import _pickle as cPickle
+
 
 import tensorflow as tf
 # from keras.backend import tensorflow_backend
@@ -45,8 +46,6 @@ config['batch_size']= 128
 config['loss']= 'categorical_crossentropy'
 config['n_epochs']= 4
 config['test_rate']=0.1
-
-
 
 
 old_session = KTF.get_session()

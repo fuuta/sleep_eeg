@@ -10,10 +10,11 @@ import os
 
 import numpy as np
 import argparse
-from . import sleeploader
-from . import tools
+from sleepscorer_org import sleeploader
+from sleepscorer_org import tools
+
 if __name__ == '__main__':
-    from . import sleepscorer
+    from AutoSleepScorer.sleepscorer import sleepscorer
 
 
     

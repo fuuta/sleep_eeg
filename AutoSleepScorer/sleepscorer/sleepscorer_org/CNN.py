@@ -2,7 +2,7 @@
 import numpy as np
 import pandas as pd
 import sleeploader
-import tools
+from sleepscorer_org import tools
 import time
 import glob
 import os,sys

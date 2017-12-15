@@ -10,7 +10,7 @@ import keras
 import numpy as np
 import keras.backend as K
 import matplotlib.pyplot as plt
-import tools
+from sleepscorer_org import tools
 import sleeploader
 
 
@@ -100,7 +100,7 @@ class Scorer(object):
             np.savetxt(filename + '.csv', preds, fmt='%d')
             print('Predictions saved to {}'.format (filename + '.csv'))
             if self.hypnograms: 
-                tools.plot_hypnogram(preds, title ='Predictions for {}'.format( os.path.basename(filename)))
+                tools.plot_hypnogram(preds, title ='Predictions for {}'.format(os.path.basename(filename)))
                 plt.savefig(filename + '.hyp.png')
                 print('Hynograms saved to {}'.format(filename + '.hyp.png'))
                 

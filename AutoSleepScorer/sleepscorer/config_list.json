@@ -26,6 +26,13 @@
       },
       "num_label": 3
     }
+  },
+  "freq_bands" : {
+    "delta": {"low": 0.5, "high": 4},
+    "theta": {"low": 4, "high": 8},
+    "beta": {"low": 12, "high": 30},
+    "gamma": {"low": 30, "high": 49.5},
+    "spindle": {"low": 12, "high": 16}
   }
 }
 
