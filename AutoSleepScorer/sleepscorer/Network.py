@@ -137,9 +137,9 @@ class Network(object):
         print('load existing params')
         if self.config['load'] == 'whole':
             if os.path.join(path,'model.json'):
-                json_string = open(os.path.join(path,'model.json')).read()
+                json_string = open(os.path.join(path,'cnn_model.json')).read()
                 self.model = keras.models.model_from_json(json_string)
-                self.model.load_weights(os.path.join(path,'model.h5'))
+                self.model.load_weights(os.path.join(path,'Final_params.hdf5'))
                 self.define_loss(self.model)
             else:
                 raise Exception('model.json not found')

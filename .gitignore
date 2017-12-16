@@ -9,6 +9,6 @@
 .ipynb_checkpoints/
 .DS_Store
 another/
-AutoSleepScorer/sleepscorer/saved_models/**/logs
+AutoSleepScorer/sleepscorer/saved_models/
 events.out.tfevents.*
 

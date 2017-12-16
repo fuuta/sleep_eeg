@@ -68,8 +68,9 @@ class Sleep_edfx(object):
                 return y
 
             self.EEG_Fpz_Cz = self.signals[:,0]
-            self.EEG_Fpz_Cz = np.dstack([butter_bandpass_filter(self.EEG_Fpz_Cz, b[1][0], b[1][1], self.Fs, order=6)
-                                         for b in freq_bands]).squeeze()
+            self.EEG_Fpz_Cz = np.dstack([butter_bandpass_filter(np.random.normal(size=100), 
+                                             freq_bands[b]['low'], 
+                                             freq_bands[b]['high'], 100, order=6) for b in freq_bands]).squeeze()
 
         def change_time_window_size(time_window):
             # self.x = self.sd.get_data(epoch_len = time_window)
