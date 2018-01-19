@@ -8,6 +8,7 @@
 .idea/
 .ipynb_checkpoints/
 .DS_Store
+.docker/
 another/
 AutoSleepScorer/sleepscorer/saved_models/
 events.out.tfevents.*
