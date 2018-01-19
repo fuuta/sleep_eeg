@@ -72,7 +72,7 @@ ymin, ymax = 0, 1
 max_display_size = 1000
 num_output= config['output_len']
 pause_time = 0.00000001
-DEBUG=True
+DEBUG=False
 PRED_NORM=True
 
 old_session = KTF.get_session()
