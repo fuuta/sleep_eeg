@@ -24,12 +24,7 @@
         "Sleep_stage_?": 0,
         "Movement_time": 0
       },
-      "num_label": 3,
-      "num2label": {
-        "0": "Wake (and others)",
-        "1": "REM Sleep",
-        "2": "NonREM Sleep"
-      }
+      "num_label": 3
     }
   },
   "freq_bands" : {

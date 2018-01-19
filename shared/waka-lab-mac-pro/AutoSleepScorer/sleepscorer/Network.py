@@ -8,7 +8,7 @@ import tensorflow as tf
 from keras.backend import tensorflow_backend
 from sklearn import metrics
 import matplotlib as mpl
-# mpl.use('Agg')
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 import itertools
 
