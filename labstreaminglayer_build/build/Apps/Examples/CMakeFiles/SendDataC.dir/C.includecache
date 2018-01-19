@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../LSL/liblsl/include/lsl_c.h
+
+/Users/futa/Documents/RESEARCH/sleep_eeg/labstreaminglayer/Apps/Examples/SendDataC.c
+lsl_c.h
+-
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+
