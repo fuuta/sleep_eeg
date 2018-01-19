@@ -5,6 +5,7 @@
 *.pkl
 *.h5
 *.hdf5
+*.zip
 .idea/
 .ipynb_checkpoints/
 .DS_Store
